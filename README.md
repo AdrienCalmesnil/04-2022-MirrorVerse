@@ -1,9 +1,6 @@
-﻿# 04-2022-MirrorVerse
-
-# Creating a new app
- npm i -g @neutralinojs/neu
- neu create hello-world
- cd hello-world
+# Setup the environment
+First, git clone the project wherever you want in your computer
+npm install to install all the dependencies
  
  # To run the app
  neu run
