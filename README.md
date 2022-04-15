@@ -6,7 +6,10 @@
   <img src="https://cdn.rawgit.com/neutralinojs/neutralinojs.github.io/b667f2c2/docs/nllogo.png" style="width:300px;"/>
 </div>
 
+Neutralinojs is a lightweight and portable desktop application development framework. It lets you develop lightweight cross-platform desktop applications using JavaScript, HTML and CSS. Apps built with Neutralinojs can run on Linux, macOS, Windows, Web, and Chrome. Also, you can extend Neutralinojs with any programming language (via extensions IPC) and use Neutralinojs as a part of any source file (via child processes IPC).
+
 ### Setup the environment
+In this project, we are using the javascript library neutralino.js. It lets you develop lightweight cross-platform desktop applications using JavaScript, HTML and CSS.
 First, `git clone` the project wherever you want in your computer
 `npm install` to install all the dependencies
  
