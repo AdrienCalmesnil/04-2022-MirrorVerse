@@ -5,7 +5,7 @@ function giveData(){
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(showPosition)
     }else{
-        alert("Your location isn't available to us and we cannot show weather data")
+        console.log("Your location isn't available to us and we cannot show weather data")
     }
 
     function showPosition(positions){
@@ -57,17 +57,14 @@ function showData(DataWeather){
         <div class="weather-description">
         <h3>${DataWeather.weather[0].description}</h3>
         </div>
-        <div class="weather-humidity">
-        <h3>Humidity - ${main.humidity}</h3>
-        </div>
         <div class="weather-wind">
         <h3>Wind-Speed - ${wind.speed}</h3>
         </div>
         <div class="weather-sunrise">
-        <h4>SunRise - ${sunriseTime}</h4>
+        <h4>Sunrise - ${sunriseTime}</h4>
         </div>
         <div class="weather-sunset">
-        <h4>SunSet - ${sunsetTime}</h4>
+        <h4>Sunset - ${sunsetTime}</h4>
         </div>
     `
 
@@ -75,7 +72,7 @@ function showData(DataWeather){
 
 function sunrise(datae){
     var date = new Date(datae * 1000);
-    var timestr = date.toLocaleTimeString();
+    var timestr = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
 
     // console.log(timestr);
     return timestr;
@@ -83,7 +80,7 @@ function sunrise(datae){
 
 function sunset(dat){
     var date = new Date(dat * 1000);
-    var timestr = date.toLocaleTimeString();
+    var timestr = date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
     
     //console.log(timestr);
     return timestr;
