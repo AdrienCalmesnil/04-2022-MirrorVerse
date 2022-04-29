@@ -55,5 +55,3 @@ window.addEventListener("load", () => {
       setTimeout(clock, 1000);
     }
   });
-
-  navigator.geolocation.getCurrentPosition( (data) => console.log(data) )
